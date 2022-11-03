@@ -1,0 +1,30 @@
+SET total TO int(INPUT())
+
+SET attended TO int(INPUT())
+
+SET attendance TO attended/total
+
+SET n TO int(INPUT())
+
+IF n EQUALS 1:
+
+  SET medcert TO True
+
+ELSEIF n EQUALS 0:
+
+  SET medcert TO False
+
+
+
+IF attendance >= 0.75 or medcert:
+
+  OUTPUT(int(attendance * 100))
+
+  OUTPUT("Allowed")
+
+ELSE:
+
+  OUTPUT(int(attendance * 100))
+
+  OUTPUT("Not allowed")
+
